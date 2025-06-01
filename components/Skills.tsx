@@ -10,6 +10,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "@/components/SkillCard";
 
+
 const SKILLS = [
   {
     icon: RectangleGroupIcon,
@@ -68,7 +69,7 @@ export function Skills() {
       </div>
       <div className="container mx-auto grid m-4 grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
         {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
+          <SkillCard key={idx} {...props} delay={idx * 0.15} />
         ))}
       </div>
     </section>

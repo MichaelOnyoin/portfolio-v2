@@ -1,13 +1,21 @@
 import React from "react";
-
+import {motion} from "framer-motion";
 interface SkillCardProps {
   title: string;
   icon: React.ElementType;
   children: React.ReactNode;
+  delay?: number;
 }
 
-export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
+export function SkillCard({ icon: Icon, title, children, delay=0 }: SkillCardProps) {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut", delay }}
+      viewport={{ once: true, amount: 0.2 }}
+      className="shadow-none"
+    >
     <div className="bg-transparent mr-4 shadow-none rounded-lg hover:border hover:border-indigo-400 transition-all duration-300 ease-in-out">
       <div className="grid justify-center text-center p-4 ">
         <div className="mx-auto mb-6 grid h-12 w-12 place-items-center rounded-full bg-gray-800 p-2.5 text-white shadow">
@@ -17,6 +25,7 @@ export function SkillCard({ icon: Icon, title, children }: SkillCardProps) {
         <p className="px-8 font-normal text-zinc-100">{children}</p>
       </div>
     </div>
+    </motion.div>
   );
 }
 

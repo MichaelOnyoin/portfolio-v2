@@ -74,16 +74,16 @@ const WorkFilter: React.FC = () => {
       selectedCategory === "All" ? true : item.categories.includes(selectedCategory)
     );
   return (
-    <div className='bg-[url(/devBg.svg)] bg-center bg-fixed mt-20 container mx-auto' id='projects'>
-      <h2 className="container mx-auto self-start mt-48 ml-32 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+    <div className='bg-[url(/devBg.svg)] bg-center bg-fixed mt-10' id='projects'>
+      <h2 className="container mx-auto self-start mt-28 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         <span className="text-zinc-100">My recent</span>{" "}
         <span className="text-teal-500">works</span>
       </h2>
-     <div className="flex gap-4 self-start pr-14 mt-4 ml-32 text-lg font-bold text-zinc-100 max-md:flex-wrap max-md:pr-5">
+     <div className="flex gap-4 self-start pr-14 mt-4 ml-10 text-lg font-bold text-zinc-100 max-md:flex-wrap max-md:pr-5">
       {filters.map((cat) => (
         <button
           key={cat}
-          className={`px-8 py-2.5 whitespace-nowrap hover:bg-teal-500 rounded-3xl max-md:px-5 ${
+          className={`px-8 py-2.5  whitespace-nowrap hover:bg-teal-500 rounded-3xl max-md:px-5 ${
             selectedCategory === cat ? 'bg-teal-500' : 'backdrop-blur-sm bg-zinc-700 bg-opacity-50'
           }`}
            onClick={() => setSelectedCategory(cat)}
