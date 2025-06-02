@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
-    <section className="mt-40 container mx-auto w-full max-w-[1275px] max-md:mt-10 max-md:max-w-full" id='Home'>
+    <section className="mt-40 container mx-auto w-full max-w-[1275px] max-md:mt-10 max-md:max-w-full" id='home'>
       <div className="flex gap-5 max-md:flex-col">
         <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
           <h2 className="text-8xl leading-[96px]  max-md:max-w-full max-md:text-4xl max-md:leading-10">

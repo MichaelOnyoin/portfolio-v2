@@ -52,7 +52,7 @@ const SKILLS = [
 //mt-3 text-lg text-zinc-100 max-md:max-w-full
 export function Skills() {
   return (
-    <section className="px-8 mt-2" id="Services">
+    <section className="px-8 mt-2" id="services">
       <div className="container mx-auto mb-20 text-center">
         <span className="mb-2 block font-bold uppercase text-teal-400 tracking-widest text-xl">
           My Skills

@@ -88,8 +88,8 @@ const WorkFilter: React.FC = () => {
       selectedCategory === "All" ? true : item.categories.includes(selectedCategory)
     );
   return (
-    <div className='bg-[url(/devBg.svg)] bg-center bg-fixed mt-10' id='Projects'>
-      <h2 className="container mx-auto self-start mt-28 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+    <div className='bg-[url(/devBg.svg)] bg-center bg-fixed' id='projects'>
+      <h2 className="container mx-auto self-start mt-10 text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl">
         <span className="text-zinc-100">My recent</span>{" "}
         <span className="text-teal-500">works</span>
       </h2>
