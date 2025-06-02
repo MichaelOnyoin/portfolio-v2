@@ -41,7 +41,7 @@ function ContactForm() {
       );
   };
   return (
-    <div className="flex gap-8 container mx-auto items-center justify-center w-4/5 max-h-screen my-16 px-4" id="contact" >
+    <div className="flex gap-8 container mx-auto items-center justify-center w-4/5 max-h-screen my-16 px-4" id="Contact" >
         <div className=" flex-col items-center justify-center w-full mb-8">
         <h1 className="text-6xl font-bold text-zinc-100 mb-6 w-full">Got a project <span className="text-6xl w-full font-bold text-teal-500 mb-6">in mind?</span></h1>
         <img loading="lazy" src="Group 2372.svg" alt="Designer portrait" className="w-3/5 aspect-[0.83] max-md:mt-10 max-md:max-w-full" />

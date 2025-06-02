@@ -5,7 +5,7 @@ import TextContent from '@/components/TextContent';
 
 const AboutMe: React.FC = () => {
   return (
-    <div className='container mx-auto min-h-screen' id="about">
+    <div className='container mx-auto min-h-screen' id="About">
     
     <main className="flex justify-center items-center px-16 py-20 bg-gray-800 max-md:px-5">
       
