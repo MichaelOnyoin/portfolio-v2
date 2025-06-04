@@ -2,7 +2,7 @@
 import React,{useState} from 'react';
 import WorkItem from './WorkItem';
 
-type Category =  'All'| 'UI'| 'UX'| 'Web Design';
+type Category =  'All'| 'UI'| 'UX'| 'Web Design'|'Blockchain';
 
 interface WorkItem {
   id: number;
@@ -50,8 +50,8 @@ const workItems: WorkItem[] = [
     categories:["All","Web Design"],
     description:"An online pharmacy to ensure you get your medications on time and at the right price from anywhere",
     title:'Careview E-pharmacy',
-    link:'',
-    github:'',
+    link:'https://careview.vercel.app/',
+    github:'https://github.com/MichaelOnyoin/Careview',
 
 
   },
@@ -67,7 +67,7 @@ const workItems: WorkItem[] = [
   },
   {
     id:6,
-    image:'https://cdn.builder.io/api/v1/image/assets/TEMP/aa10f7d7ae5cfb9ef954e6915aa1d901b8a54e148aed165e73c31dd96c32de4e?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&',
+    image:'Merxpresslogo.svg',
     categories:["All","UI","Web Design"],
     description:"E-commerce platform for buying and selling products online, built using Next.js and Figma",
     title:'Merxpress',
@@ -75,11 +75,21 @@ const workItems: WorkItem[] = [
     github:'https://github.com/MichaelOnyoin/Merxpress',
 
   },
+   {
+    id:7,
+    image:'votechain.png',
+    categories:["All","Blockchain","Web Design"],
+    description:"This Blockchain app is designed to help citizens store voter registry data on an Ethereum blockchain.",
+    title:'VoteChain',
+    link:'https://votechain-xi.vercel.app/',
+    github:'https://github.com/MichaelOnyoin/auth-app',
+
+  },
 ];
 
 //const categories: Category[] = ["All", "UI", "UX", "Web Design"];
 
-const filters: Category[] = ["All", "UI", "UX", "Web Design"];
+const filters: Category[] = ["All", "UI", "UX", "Web Design","Blockchain"];
 
 const WorkFilter: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<Category>("All");
