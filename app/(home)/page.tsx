@@ -5,7 +5,8 @@ import WorkFilter from '@/components/WorkFilter';
 import Skills from '@/components/Skills';
 import ContactForm from '@/components/ContactPage';
 import AboutMe from '@/components/About';
-
+import Clients from '@/components/Clients';
+import TechStack from '@/components/TechStack';
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,8 @@ const Home: React.FC = () => {
       <AboutMe />
       <Skills/>
       <WorkFilter/>
+      <TechStack />
+      <Clients />
       <ContactForm/>
     </Layout>
     

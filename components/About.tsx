@@ -36,6 +36,13 @@ const AboutMe: React.FC = () => {
                 </div>
               </div>
               <TextContent />
+              <div>
+                <button
+
+                  className="flex btn-primary bg-teal-400 p-2 rounded-lg items-center gap-2 text-zinc-100 hover:text-teal-700 transition-colors duration-300 mt-5 max-md:mt-10 max-md:max-w-full"
+                  //placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+                > Read More</button>
+              </div>
               <ImageComponent
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/21b0d02081ae81c306a49f1137b0ea6a97a1f49349f7ad3bfa3a5ada52d7b42c?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&"
                 alt=""
