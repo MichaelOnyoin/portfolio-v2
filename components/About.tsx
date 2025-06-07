@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageComponent from '@/components/ImageComponent';
 import TextContent from '@/components/TextContent';
+import { ArrowRight } from 'lucide-react';
 
 
 const AboutMe: React.FC = () => {
@@ -36,16 +37,15 @@ const AboutMe: React.FC = () => {
                 </div>
               </div>
               <TextContent />
-              <div>
-                <button
-
-                  className="flex btn-primary bg-teal-400 p-2 rounded-lg items-center gap-2 text-zinc-100 hover:text-teal-700 transition-colors duration-300 mt-5 max-md:mt-10 max-md:max-w-full"
-                  //placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
-                > Read More</button>
+              <div className='flex mt-10 max-md:flex-col max-md:mt-5 max-md:items-center md:max-w-100'>
+                <button className="flex group text-zinc-100 rounded font-semibold px-4 py-2.5 cursor-pointer hover:bg-teal-500 text-shadow-lg rounded max-md:px-5 sm:px-2 sm:py-1.5 md:px-2">
+                   Read more<ArrowRight className="w-4 ml-1 group-hover:translate-x-1 transition duration-300"   />
+                    {/* ➔  */}
+                </button>
               </div>
               <ImageComponent
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/21b0d02081ae81c306a49f1137b0ea6a97a1f49349f7ad3bfa3a5ada52d7b42c?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&"
-                alt=""
+                alt="random background vector image"
                 className="self-center mt-24 max-w-full border-4 border-solid aspect-[0.97] border-teal-500 border-opacity-20 stroke-[4px] stroke-teal-500 stroke-opacity-20 w-[146px] max-md:mt-10"
               />
             </div>
@@ -56,8 +56,24 @@ const AboutMe: React.FC = () => {
               alt="About me visual representation"
               className="grow mt-24 w-full aspect-[1.12] max-md:mt-10 max-md:max-w-full"
             />
+            {/* <ImageComponent
+              src="avatar9.svg"
+              alt="About me visual representation"
+              className="grow mt-24 w-full aspect-[1.12] max-md:mt-10 max-md:max-w-full"
+            /> */}
           </section>
         </div>
+        {/* <embed src="https://azure-zeta-two.vercel.app/" type="text/html" className='fixed bottom-0 right-0 w-60 h-60 border-none'/> */}
+        {/* <script src="https://chatbot.onyoin.com/static/js/chatbot.js" type='text/javascript'> */}
+        {/* heudless */}
+        {/* </script> */}
+        {/* <iframe
+            src="https://azure-zeta-two.vercel.app/"
+            //styles="width: 100%; max-width: 400px; height: 600px; border: none; border-radius: 12px;"
+            className="w-fit max-w-400 float bottom-0 right-0 border-none rounded-lg shadow-lg"
+            title="Company Chatbot"
+          ></iframe> */}
+
       </div>
     </main>
     

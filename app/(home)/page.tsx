@@ -7,6 +7,7 @@ import ContactForm from '@/components/ContactPage';
 import AboutMe from '@/components/About';
 import Clients from '@/components/Clients';
 import TechStack from '@/components/TechStack';
+import FloatingChat from '../../components/FloatingChat';
 
 const Home: React.FC = () => {
   return (
@@ -19,6 +20,8 @@ const Home: React.FC = () => {
       <TechStack />
       <Clients />
       <ContactForm/>
+      <FloatingChat />
+     
     </Layout>
     
   );

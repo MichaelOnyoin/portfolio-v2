@@ -68,12 +68,10 @@ function ContactForm() {
             placeholder="Message"
             name="message"
         />
-        <button className="px-8 py-2.5 bg-teal-400 font-semibold text-shadow-lg rounded-3xl max-md:px-5 btn-primary">
+        <button className="px-8 py-2.5 group cursor-pointer bg-teal-400 font-semibold text-shadow-lg rounded-3xl max-md:px-5 btn-primary">
             Send Message
-            {/* <div  id="my-popover" className="opacity-0 starting:open:opacity-0 ...">
-   
-            </div> */}
-            <SendHorizonal className="inline-block ml-2 h-5 w-5 text-white hover:rotate-1/2" role="button" />
+
+            <SendHorizonal className="inline-block ml-2 w-7 text-white group-hover:-rotate-30 transition-transform duration-300" role="button" />
         </button>
         </form>
     </div>

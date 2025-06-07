@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ activeTab }) => {
           <a
             key={tab}
             href={`#${tab.toLowerCase()}`}
-            className={`overflow-hidden gap-2.5 self-stretch px-10 py-5 my-auto text-xl hover:bg-teal-500 ${
+            className={`overflow-hidden gap-2.5 self-stretch px-10 py-5 my-auto text-xl hover:bg-teal-500 md:text-md lg:text-lg ${
               activeTab === tab.toLowerCase()
                 ? 'font-bold bg-teal-500'
                 : ''

@@ -37,9 +37,19 @@ const Footer: React.FC = () => {
           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d0069a0c68235668202e47d74fc5ffb69a6e1b8299b70a9645b34a26d96cc48?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="shrink-0 w-12 aspect-square hover:text-red-500" />
         </a>
       </div>
+      <div className="items-center justify-center mt-10 text-lg text-zinc-100">
+        <p className="text-md">Designed and built by Michael Onyoin</p>
+      </div>
+      
       <div className="self-end mt-24 text-lg text-zinc-100 text-opacity-80 max-md:mt-10 max-md:mr-2.5">
+        
         <a href="#">Terms of Service</a> - <a href="#">Privacy Policy</a>
       </div>
+      <div className="flex flex-wrap items-right justify-center gap-y-4  py-6 md:justify-between">
+          <p className="text-md text-zinc-100">  
+            &copy; {new Date().getFullYear()} Michael Onyoin. All rights reserved.
+          </p>
+        </div>
     </footer>
   );
 };
