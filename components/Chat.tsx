@@ -50,7 +50,7 @@ export default function Chat() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Ask about the company..."
           />
-          <button className="bg-teal-500 text-zinc-100 px-3 py-2 rounded ml-4" type="submit">
+          <button className="bg-teal-500 text-zinc-100 px-3 py-2 rounded ml-4" type="submit" >
             <Send className="inline-block h-5 w-5" />
           </button>
         </form>

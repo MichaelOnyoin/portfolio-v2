@@ -11,12 +11,12 @@ export default function FloatingChat() {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-4 right-4 bg-teal-500 text-white p-3 rounded-full shadow-lg"
+        className="fixed bottom-4 right-4 bg-teal-500 text-white p-3 shadow-lg hover:shadow-indigo-500 rounded-full "
       >
         <Sparkles className="h-6 w-6" fill='currentColor' />
       </button>
       {open && (
-        <div className="fixed bottom-20 right-4 w-80 shadow-xl z-50">
+        <div className="fixed bottom-20 right-4 w-80 shadow-xl  z-50">
           <Chat />
         </div>
       )}

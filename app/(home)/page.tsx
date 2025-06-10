@@ -8,6 +8,7 @@ import AboutMe from '@/components/About';
 import Clients from '@/components/Clients';
 import TechStack from '@/components/TechStack';
 import FloatingChat from '../../components/FloatingChat';
+import TestimonialTest from '../../components/Testimonials';
 
 const Home: React.FC = () => {
   return (
@@ -19,9 +20,10 @@ const Home: React.FC = () => {
       <WorkFilter/>
       <TechStack />
       <Clients />
+      <TestimonialTest/>
       <ContactForm/>
       <FloatingChat />
-     
+      
     </Layout>
     
   );
