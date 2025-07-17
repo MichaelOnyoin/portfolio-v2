@@ -61,7 +61,7 @@ const workItems: WorkItem[] = [
     categories:["All","Web Design"],
     description:"AI chatbot built using Next.js, Azure OpenAI and postgres",
     title:'AI Chatbot',
-    link:'chat.onyoin.com',
+    link:'https://chat.onyoin.com',
     github:'https://github.com/MichaelOnyoin/chat',
 
   },

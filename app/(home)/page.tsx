@@ -9,6 +9,8 @@ import Clients from '@/components/Clients';
 import TechStack from '@/components/TechStack';
 import FloatingChat from '../../components/FloatingChat';
 import TestimonialTest from '../../components/Testimonials';
+import Border from '@/components/Border';
+//import Resume from '@/components/Resume';
 
 const Home: React.FC = () => {
   return (
@@ -22,6 +24,10 @@ const Home: React.FC = () => {
       <Clients />
       <TestimonialTest/>
       <ContactForm/>
+      {/* <Resume /> */}
+      <Border />
+      {/* Uncomment the next line to include the Resume component */}
+      
       <FloatingChat />
       
     </Layout>

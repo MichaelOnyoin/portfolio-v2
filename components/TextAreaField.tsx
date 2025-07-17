@@ -18,6 +18,7 @@ function TextAreaField({ label, placeholder, name }: TextAreaFieldProps) {
           placeholder={placeholder}
           name={name}
           className="text-lg leading-normal bg-transparent resize-none size-full text-zinc-100 focus:outline-none max-sm:text-base"
+          style={{ height: "100%", width: "100%" }}
         />
       </div>
     </div>

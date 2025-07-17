@@ -2,6 +2,13 @@ import React from 'react';
 import {motion} from 'framer-motion';
 import { Github, Globe } from 'lucide-react';
 import Link from 'next/link';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+
+
 
 
 interface WorkItemProps {
@@ -31,12 +38,26 @@ const WorkItem: React.FC<WorkItemProps> = ({ src, alt, description, title, link,
           {title}
         </h4>
         <p className="text-white text-lg">{description}</p>
-        <Link href={github} target='_blank' className="">
-        <Github className="absolute bottom-4 right-4 text-white hover:text-teal-500 transition-colors duration-300" size={24} role='link' />
-        </Link>
-        <Link href={link} target='_blank' className="">
-        <Globe className="absolute bottom-4 right-12 text-white hover:text-teal-500 transition-colors duration-300" size={24} role='link' />
-        </Link>
+        <Tooltip>
+          <TooltipTrigger className="">
+            <Link href={github} target='_blank' className="">
+            <Github className="absolute bottom-4 right-4 text-white hover:text-teal-500 transition-colors duration-300" size={24} role='link' />
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent className="bg-[rgba(0,0,0,0.6)] text-zinc-100 translate-x-[150%] translate-y-[-50%] text-sm">
+            View Github Source Code
+          </TooltipContent>
+        </Tooltip>
+        <Tooltip>
+          <TooltipTrigger className="">
+            <Link href={link} target='_blank' className="">
+              <Globe className="absolute bottom-4 right-12 text-white hover:text-teal-500 transition-colors duration-300" size={24} role='link' />
+            </Link>
+          </TooltipTrigger>
+          <TooltipContent className="bg-[rgba(0,0,0,0.6)] text-zinc-100 translate-x-[150%] translate-y-[-50%] text-sm">
+            View Live Project/Website
+          </TooltipContent>
+        </Tooltip>
       </div>
     </div>
     </motion.div>
