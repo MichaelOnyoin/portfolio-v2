@@ -41,8 +41,11 @@ const Hero: React.FC = () => {
             {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d75e161cbef9bac83848a5880add9bcc99ee833883542121a3976acdba878778?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="" className="self-center mt-36 ml-20 w-24 backdrop-blur-sm aspect-square fill-zinc-700 fill-opacity-80 max-md:mt-10" /> */}
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-[45%] max-md:ml-0 max-md:w-full">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/136e12b46f75e8c0130b6cc1531d3c788e0a7b933cd5d96b7ec8e733d97b7cab?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="Designer portrait" className="w-full aspect-[0.83] max-md:mt-10 max-md:max-w-full" />
+        <div className="flex flex-col ml-5 w-[40%] max-md:ml-0 max-md:w-full">
+          {/* <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/136e12b46f75e8c0130b6cc1531d3c788e0a7b933cd5d96b7ec8e733d97b7cab?apiKey=2c0ef7d7caa24d8d8c04d3962010fc58&" alt="Designer portrait" className="w-full aspect-[0.83] max-md:mt-10 max-md:max-w-full" /> */}
+          <div className="rounded-(--card-radius) bg-white/15 p-(--card-padding) outline -outline-offset-1 outline-white/25 [--card-padding:--spacing(3)] [--card-radius:var(--radius-4xl)]">
+            <img className="aspect-5/6 rounded-[calc(var(--card-radius)-var(--card-padding))] bg-gray-800 object-cover shadow-2xl outline -outline-offset-1 outline-white/10" src="avatar9.svg" alt="" />
+          </div>
         </div>
       </div>
     </section>
