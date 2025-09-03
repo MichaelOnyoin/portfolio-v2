@@ -61,8 +61,8 @@ const workItems: WorkItem[] = [
     categories:["All","Web Design"],
     description:"AI chatbot built using Next.js, Azure OpenAI and postgres",
     title:'AI Chatbot',
-    link:'https://chat.onyoin.com',
-    github:'https://github.com/MichaelOnyoin/chat',
+    link:'https://chatbot.onyoin.com',
+    github:'https://github.com/MichaelOnyoin/ai-chatbot',
 
   },
   {
@@ -71,8 +71,8 @@ const workItems: WorkItem[] = [
     categories:["All","UI","Web Design"],
     description:"E-commerce platform for buying and selling products online, built using Next.js and Figma",
     title:'Merxpress',
-    link:'https://merxpress-seven.vercel.app/',
-    github:'https://github.com/MichaelOnyoin/Merxpress',
+    link:'https://merxpress-v2.vercel.app/',
+    github:'https://github.com/MichaelOnyoin/merxpress-v2',
 
   },
    {
